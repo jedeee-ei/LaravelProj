@@ -15,4 +15,7 @@ class Student extends Model
         'date_of_birth',
         'gender'
     ];
+
+    public $timestamps = true;
+
 }

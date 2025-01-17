@@ -13,7 +13,7 @@
             <div class="logo">Scholarly</div>
             <nav>
                 <a href="#" class="nav-link active">Dashboard</a>
-                <a href="#" class="nav-link">Students</a>
+                <a href="students/index" class="nav-link">Students</a>
                 <a href="#" class="nav-link">Classes</a>
                 <a href="#" class="nav-link">Attendance</a>
                 <a href="#" class="nav-link">Reports</a>

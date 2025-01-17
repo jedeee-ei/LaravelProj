@@ -21,6 +21,21 @@
             <form action="{{ route('students.store') }}" method="POST">
                 @csrf
                 <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="student_id" class="form-label">Student ID</label>
+                            <input type="text" class="form-control @error('student_id') is-invalid @enderror"
+                                   id="student_id" name="student_id" value="{{ old('student_id') }}" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nationality" class="form-label">Nationality</label>
+                            <input type="text" class="form-control @error('nationality') is-invalid @enderror"
+                                   id="nationality" name="nationality" value="{{ old('nationality') }}" required>
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="first_name" class="form-label">First Name</label>
@@ -34,6 +49,22 @@
                             <label for="last_name" class="form-label">Last Name</label>
                             <input type="text" class="form-control @error('last_name') is-invalid @enderror"
                                    id="last_name" name="last_name" value="{{ old('last_name') }}" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Course" class="form-label">Course</label>
+                            <input type="text" class="form-control @error('Course') is-invalid @enderror"
+                                   id="Course" name="Course" value="{{ old('Course') }}" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Section" class="form-label">Section</label>
+                            <input type="text" class="form-control @error('Section') is-invalid @enderror"
+                                   id="Section" name="Section" value="{{ old('Section') }}" required>
                         </div>
                     </div>
 
@@ -53,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="address" class="form-label">Address</label>
                             <textarea class="form-control @error('address') is-invalid @enderror"
